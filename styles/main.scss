@@ -10,4 +10,8 @@ section {
 
 h1 {
   @include var.title(var.$mainTitleFontSize, true);
+
+  @media (max-width: 800px) {
+    @include var.title(var.$mainTitleFontSize * 0.75, true)
+  }
 }

@@ -17,6 +17,11 @@
   &[aria-expanded="false"] {
     transform: rotate(90deg);
   }
+
+  @media (max-width: 550px) {
+    width: var.$panelCloseIconSize * 0.75;
+    height: var.$panelCloseIconSize * 0.75;
+  }
 }
 
 .panel__content {
@@ -46,4 +51,8 @@ h2 {
 .panel__subtitle {
   padding: var.$panelSubtitlePadding;
   font-size: var.$panelSubtitleFontSize;
+
+  @media (max-width: 550px) {
+    font-size: var.$panelSubtitleFontSize * 1.25;
+  }
 }
